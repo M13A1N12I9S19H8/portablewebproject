@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP8266 Resource Hub</title>
+  <style>
+    /* Basic Reset */
+    body, h1, h2, p, button, video, embed {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and Navigation */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #009578;
+    }
+
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #f4f4f4;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .hero-content button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+
+    .hero-content button:hover {
+      background: #555;
+    }
+
+    /* Sections */
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+    }
+
+    /* Video and PDF Styles */
+    video, embed {
+      max-width: 100%;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    #scroll-to-top-btn {
+      background: #555;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    #scroll-to-top-btn:hover {
+      background: #777;
+    }
+
+    .file-name {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#hero-section">Home</a></li>
+      <li><a href="#video-section">Videos</a></li>
+      <li><a href="pdf.html">PDFs</a></li>
+      <li><a href="sticky.html">Notes</a></li>
+      <li><a href="chatbot.html">Chatbot</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero-section" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the ESP8266 Resource Hub</h1>
+      <p>Your go-to source for survival, engineering, and medical knowledge, accessible offline.</p>
+    
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="video-section" class="section">
+    <h2>Video Library</h2>
+    <div id="video-container">
+      <!-- Videos will be loaded here dynamically -->
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <button onclick="scrollToTop()" id="scroll-to-top-btn">Scroll to Top</button>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

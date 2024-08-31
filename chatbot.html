@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP8266 Resource Hub</title>
+  <style>
+    /* Basic Reset */
+
+    /* Body and Navigation */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #009578;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    #chatbox {
+      margin-top: 2%;
+      margin-left: 10%;
+      margin-right: 10%;
+      border: 1px solid #ddd;
+      height: 300px;
+      background: white;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+#user-input {
+  width: calc(100% - 80px);
+  padding: 10px;
+}
+/* Footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    #scroll-to-top-btn {
+      background: #555;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    #scroll-to-top-btn:hover {
+      background: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+<!-- Chatbot Interface -->
+<div id="chatbot">
+  <div id="chatbox">
+    <!-- Messages will be displayed here -->
+  </div>
+  <input type="text" id="user-input" placeholder="Type your message here">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <button onclick="scrollToTop()" id="scroll-to-top-btn">Scroll to Top</button>
+  </footer>
+
+  <script src="chatbot.js">
+   
+  </script>
+</body>
+</html>
